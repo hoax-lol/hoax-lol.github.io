@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>H04x</title>
+    <title>H04X</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
@@ -81,13 +81,6 @@
     </div>
 
     <script>
-        function redirectIfPhone() {
-            const userAgent = navigator.userAgent.toLowerCase();
-            const isMobile = /iphone|ipad|ipod|android|blackberry|iemobile|opera mini/i.test(userAgent);
-            if (isMobile) {
-                window.location.href = 'https://h04x.xyz/mobile';
-            }
-        }
         
         redirectIfPhone();
 
@@ -192,7 +185,7 @@
             welcomeMsg.className = "output";
             terminal.insertBefore(welcomeMsg, terminal.firstChild);
 
-            simulateTypeEffect("LOADING h04x.XYZ ████████████████████████████", welcomeMsg, false, () => {
+            simulateTypeEffect("LOADING H04X.XYZ ████████████████████████████", welcomeMsg, false, () => {
                 const helpMsg = document.createElement("div");
                 helpMsg.className = "output";
                 terminal.insertBefore(helpMsg, terminal.children[1]);
