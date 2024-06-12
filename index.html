@@ -113,14 +113,11 @@
                     output.className = "output";
                     terminal.insertBefore(output, terminal.lastElementChild);
 
-                    let response = "Command not found. Type 'HELP' to see the available commands.";
+                   let response = "Command not found. Type 'HELP' to see the available commands.";
                     if (command !== "") {
                         switch (command) {
                             case "WHOAMI":
                                 response = "Hoax (aka hoaxfr) | Likes: Swift, HTML, CSS, Javascript and Python";
-                                break;
-                            case "DONATIONS"
-                                response = "hoax.lol/pay"
                                 break;
                             case "CONTACT":
                                 response = "Go to hoax.lol/support for help. Or email hoax@hoax.lol to get in touch.";
@@ -132,7 +129,10 @@
                                 response = "DISCORD USERNAME: hoaxfr | LINK: hoax.lol/discord";
                                 break;
                             case "HELP":
-                                response = "Available commands: WHOAMI, CONTACT, CLEAR, BENDERSMC, DISCORD, DONATIONS, HELP.";
+                                response = "Available commands: WHOAMI, CONTACT, CLEAR, BENDERSMC, DISCORD, HELP.";
+                                break;
+                            case "HELP":
+                                response = "Available commands: WHOAMI, CONTACT, CLEAR, BENDERSMC, DISCORD, HELP.";
                                 break;
                         }
                         simulateTypeEffect(response, output, true, () => {
