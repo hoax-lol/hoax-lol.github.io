@@ -1,1 +1,1 @@
-view site @ h04x.xyz
+view site @ Hoax.lol
